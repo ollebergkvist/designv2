@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Supply the basis for the navbar as an array.
  */
@@ -7,7 +8,7 @@ return [
     "id" => "rm-menu",
     "wrapper" => null,
     "class" => "rm-default rm-mobile",
- 
+
     // Here comes the menu items
     "items" => [
         [
@@ -33,6 +34,11 @@ return [
                     ],
                 ],
             ],
+        ],
+        [
+            "text" => "Content",
+            "url" => "content",
+            "title" => "Innehåll.",
         ],
         [
             "text" => "Om",

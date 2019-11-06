@@ -1,25 +1,26 @@
 ---
-title: "Min fina titel"
+title: "Olle Bergkvist | Design"
+views:
+    kursrepo:
+        region: main
+        template: anax/v2/block/default
+        sort: 2
+        data:
+            meta:
+                type: single
+                route: block/byline
 ---
-Min me-sida i kursen design
-=========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
+# Min me-sida i kursen design
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
+[FIGURE src="image/me.jpg?w=300" class="right" caption="Bild på mig"]
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+Hej,
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+Olle Bergkvist heter jag. Kommer från Skanör, 20 minuter söder om Malmö.
+Utbildad ljudtekniker vid SAE i Berlin och jobbade tidigare som assisterande inspelningstekniker i en musikstudio i Berlin. Efter några
+år i musikbranschen kände jag att det var dags för något nytt, så jag bestämde mig för att prova på programmering genom att läsa 2 distanskurser via Linneuniversitetet. Passade mig som handen i handsken helt enkelt, så jag bestämde mig för att söka in till BTH! :)
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
+Förutom mitt musikintresse så gillar jag matlagning, natur och kitesurfning!
 
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
-
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
-
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+Ser verkligen fram emot den här tiden på BTH!
