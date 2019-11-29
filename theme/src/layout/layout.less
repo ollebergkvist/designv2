@@ -1,0 +1,209 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+/**
+ * General layout
+ */
+
+// /* Hide submenu, leave this to kmom02 */
+// .rm-desktop ul {
+//     display: none;
+// }
+
+// /* Hide responsive/mobile menu, leave this to kmom02 */
+// .rm-navbar-max {
+//     display: none;
+// }
+
+/* General */
+
+hr {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+/* Container */
+
+.outer-wrap {
+    width: 100%;
+}
+
+.inner-wrap {
+    width: 57%;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.region-header-col-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+.region-header-col-2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.site-logo {
+    display: none;
+}
+
+.region-flash img {
+    display: none;
+}
+
+/* Navbar */
+.rm-max .rm-small {
+    display: none;
+}
+.my-navbar {
+    display: flex;
+    // text-align: center;
+    margin-top: 2em;
+}
+
+.my-navbar a {
+    letter-spacing: 0.12em;
+    padding-right: 1.5em;
+}
+
+.rm-submenu-button {
+    display: none;
+}
+
+.my-navbar li {
+    display: inline;
+}
+
+/* Sidebar */
+
+.inner-wrap-main .row {
+    display: flex;
+}
+
+.region-sidebar-left {
+    display: flex;
+    justify-content: flex-end;
+    float: left;
+    margin-right: 4em;
+    text-align: center;
+}
+
+.region-sidebar-left h4 {
+    display: none;
+}
+
+.region-sidebar-left li {
+    padding: 1em 2em 1em 2em;
+}
+
+.region-sidebar-left li:last-child {
+    border-bottom: none;
+}
+
+.region-sidebar-right a,
+p {
+    display: block;
+    margin-bottom: 0;
+}
+
+.wrap-sidebar ul {
+    list-style: none;
+}
+
+/* Next / Previous */
+
+.next {
+    float: right;
+    margin-bottom: 2em;
+}
+
+.previous {
+    margin-bottom: 2em;
+}
+
+/* Main */
+
+main {
+    min-height: 42em;
+}
+
+.inner-wrap-main {
+    padding: 3em 0;
+}
+
+/* Article */
+
+.article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+article p {
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+/* Byline */
+.block {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+/* Footer */
+
+.outer-wrap-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: 24em;
+    width: 100%;
+}
+
+.footer-column-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-column {
+    width: 100%;
+    align-items: center;
+}
+
+.footer-column:last-child {
+    border-right: 1px solid transparent;
+}
+
+.footer-column-1 a {
+    display: block;
+    margin: 0;
+}
+
+.footer-column-2 a {
+    display: block;
+    margin: 0;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+}
+
+.site-footer {
+    padding-bottom: 1em;
+}

@@ -1,0 +1,184 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorMain: #ffe4c4;
+@bgColorFooter: white;
+@fontColor: #333;
+@hrColor: black;
+@tableColor: black;
+@footerColumnHrRight: black;
+@footerHr: black;
+@fontFamilyGeneral: "Roboto", sans-serif;
+@fontFamilyExtra: "Roboto Condensed", sans-serif;
+@pAndAFontSize: 1em;
+@textTransform: uppercase;
+
+/* Base styles */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1.5;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+/* Fonts */
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div {
+    font-family: @fontFamilyGeneral;
+    color: @fontColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: @textTransform;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin-bottom: 1.5rem;
+}
+
+p,
+a {
+
+    font-size: @pAndAFontSize;
+    margin-bottom: 1.5rem;
+}
+
+img,
+video,
+#player {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 1px solid @hrColor;
+}
+
+/* Container */
+
+.wrap-all {
+    background-color: @bgColorMain;
+}
+
+/* Header */
+
+.site-logo-text a {
+    font-size: 4em;
+    letter-spacing: 0.12em;
+    font-weight: 100;
+    text-transform: @textTransform;
+    text-decoration: none;
+    font-family: @fontFamilyExtra;
+}
+
+/* Navbar */
+
+.my-navbar a {
+    text-decoration: none;
+    text-transform: @textTransform;
+}
+
+.my-navbar a:hover {
+    font-weight: bold;
+}
+
+/* Bread crumbs */
+
+.region-breadcrumb ul {
+    list-style-type: none;
+}
+
+.region-breadcrumb a {
+    text-decoration: none;
+    text-transform: @textTransform;
+}
+
+/* Sidebar */
+.region-sidebar-left ul {
+    border: 1px solid @tableColor;
+}
+
+.region-sidebar-left li {
+    border-bottom: 1px solid @hrColor;
+}
+
+.wrap-sidebar h4 {
+    font-weight: 800;
+}
+
+.wrap-sidebar a {
+    text-decoration: none;
+    text-transform: @textTransform;
+}
+
+/* Next / Previous buttons */
+
+.previous a {
+    text-transform: @textTransform;
+    text-decoration: none;
+}
+
+.next a {
+    text-transform: @textTransform;
+    text-decoration: none;
+}
+
+/* Main */
+
+// .outer-wrap-main {
+//     border-top: 1px solid @hrColor;
+// }
+
+/* Footer */
+
+.region-footer h4 {
+    font-weight: bold;
+}
+
+.outer-wrap-footer {
+    background-color:@bgColorFooter;
+}
+
+.footer-column {
+    border-right: 1px solid @footerColumnHrRight;
+}
+
+.site-footer {
+    border-bottom: 1px solid @footerHr;
+}

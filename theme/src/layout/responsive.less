@@ -1,0 +1,57 @@
+/**
+ * Layout for responsive style through media queries.
+ */
+
+@media screen and (max-width: 735px) {
+    .rm-max .rm-small {
+        display: block;
+    }
+
+    .rm-desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .footer-column-wrapper {
+        flex-direction: column;
+        flex: auto;
+        text-align: center;
+    }
+    .footer-column {
+        border-right: none;
+    }
+
+    .site-footer {
+        border-bottom: none;
+        margin-top: 1rem;
+    }
+
+    .region-footer {
+        margin-top: 3rem;
+    }
+
+    .region-sidebar-left {
+        display: none;
+    }
+
+    .region-sidebar-right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .inner-wrap-main {
+        flex-direction: column;
+        flex: auto;
+        justify-content: center;
+    }
+    .rm-navbar-max,
+    .rm-navbar,
+    .rm-max,
+    .rm-swipe-right {
+        flex-direction: column;
+        flex: auto;
+        text-align: center;
+    }
+}
