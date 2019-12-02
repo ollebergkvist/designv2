@@ -1,0 +1,109 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+/**
+ * General layout
+ */
+
+// /* Hide submenu, leave this to kmom02 */
+// .rm-desktop ul {
+//     display: none;
+// }
+
+// /* Hide responsive/mobile menu, leave this to kmom02 */
+// .rm-navbar-max {
+//     display: none;
+// }
+
+.inner-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.outer-wrap-header {
+    background-color: darkgray;
+    .clearfix();
+}
+
+.inner-wrap-header {
+    max-width: 100%;
+}
+
+.region-header-col-1,
+.region-header-col-3 {
+    width: 20%;
+    float: left;
+}
+
+.region-header-col-2 {
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+
+.inner-wrap-main {
+    .clearfix();
+}
+
+.region-main {
+    width: 70%;
+    float: left;
+    margin-left: 10%;
+    overflow: auto;
+
+    &.has-sidebar {
+        margin-left: auto;
+    }
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    width: 30%;
+    float: left;
+}
+
+.region-main {
+    width: 70%;
+    float: left;
+    min-height: 38rem;
+}
+
+.site-logo {
+    display: none;
+}
+
+.site-logo-text-icon {
+    display: none;
+}
+
+.footer-column {
+    text-align: center;
+    width: 33%;
+    float: left;
+}
+
+.outer-wrap-footer,
+.inner-wrap-footer {
+    color: white;
+    background-color: #333;
+}
+
+.outer-wrap-footer {
+    min-height: 20rem;
+}
+
+.footer-column-1 a {
+    display: block;
+    margin: 0;
+}
+
+.footer-column-2 a {
+    display: block;
+    margin: 0;
+}

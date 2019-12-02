@@ -1,0 +1,152 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorMain: white;
+@bgColorFooter: #d7cbbd;
+@fontColor: #333;
+@hrColor: black;
+@tableColor: black;
+@footerColumnHrRight: black;
+@footerHr: black;
+@fontFamilyGeneral: "Overpass Mono", monospace;
+@fontFamilyExtra: "Oswald", sans-serif;
+@textTransform: uppercase;
+
+// @fontFamilyBody:
+
+html {
+    // background-color: @bgColorHtml;
+}
+
+body {
+    // color: @colorBody;
+    // background-color: @bgColorBody;
+    #desinax-hgrid.font(@fontSizeBody); // Activate the grid base font
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+/* Fonts */
+
+p,
+span,
+div {
+    font-family: @fontFamilyGeneral;
+    color: @fontColor;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: @fontFamilyExtra;
+    color: @fontColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: @textTransform;
+    border-bottom: none;
+}
+
+/* Container */
+
+.wrap-all {
+    background-color: @bgColorMain;
+}
+
+/* Header */
+
+.site-logo-text a {
+    font-size: 2em;
+    letter-spacing: 0.12em;
+    font-weight: 100;
+    text-transform: @textTransform;
+    text-decoration: none;
+    font-family: @fontFamilyExtra;
+}
+
+/* Navbar */
+
+.my-navbar a {
+    text-decoration: none;
+    text-transform: @textTransform;
+}
+
+.my-navbar a:hover {
+    // font-weight: bold;
+}
+
+/* Bread crumbs */
+
+.region-breadcrumb ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.region-breadcrumb a {
+    text-decoration: none;
+    text-transform: @textTransform;
+}
+
+/* Sidebar */
+.region-sidebar-left ul {
+    // border: 1px solid @tableColor;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.region-sidebar-left li {
+    // outline: 1px solid @hrColor;
+}
+
+// .wrap-sidebar h4 {
+//     font-weight: 800;
+// }
+
+.wrap-sidebar a {
+    text-decoration: none;
+    text-transform: @textTransform;
+}
+
+/* Next / Previous buttons */
+
+.previous a {
+    text-transform: @textTransform;
+    text-decoration: none;
+}
+
+.next a {
+    text-transform: @textTransform;
+    text-decoration: none;
+}
+
+/* Footer */
+
+.footer-column {
+    // margin-top: 3rem;
+}
+
+.region-footer h4 {
+    font-weight: bold;
+}
+
+.outer-wrap-footer {
+    background-color: @bgColorFooter;
+    color: white;
+    min-height: 20rem;
+}
+
+.site-footer {
+    // border-bottom: 1px solid @footerHr;
+}

@@ -72,8 +72,8 @@ $route = "route-" . str_replace("/", "-", $di->get("request")->getRoute());
     <?php if (isset($stylesheets)) : ?>
         <?php foreach ($stylesheets as $stylesheet) : ?>
             <link rel="stylesheet" type="text/css" href="<?= asset($stylesheet) ?>">
-            <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap" rel="stylesheet">
         <?php endforeach; ?>
     <?php endif; ?>
 
