@@ -35,9 +35,9 @@ return [
             ],
         ],
         [
-            "text" => "Content",
-            "url" => "content",
-            "title" => "Innehåll.",
+            "text" => "Rapport",
+            "url" => "rapport",
+            "title" => "Rapport.",
         ],
         [
             "text" => "Om",

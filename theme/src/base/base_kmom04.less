@@ -1,14 +1,6 @@
 /**
  * Base style to affect HTML elements on a general scale.
  */
-@bgColorMain: white;
-@bgColorFooter: #d7cbbd;
-@fontColor: #333;
-@hrColor: black;
-@tableColor: black;
-@footerColumnHrRight: black;
-@footerHr: black;
-@textTransform: uppercase;
 
 // Activate the grid base font
 body {
@@ -36,10 +28,13 @@ a,
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
     color: @fontColor;
+}
+
+h4 {
+    color: @accentFontColor;
 }
 
 h1,
@@ -63,20 +58,30 @@ h6 {
 
 /* Header */
 
+.outer-wrap-header {
+    background-color: @bgColorHeader;
+    background: @backgroundImage;
+}
+
+.rm-desktop li a {
+    color: @fontColorLinks;
+}
+
 .site-logo-text a {
     font-size: 2em;
-    font-family: "Oswald", sans-serif;
+    font-family: @fontFamilyHeadings;
     letter-spacing: 0.12em;
     font-weight: 100;
     text-transform: @textTransform;
     text-decoration: none;
-    // margin-left: 4em;
+    margin-left: 1rem;
+    color: @fontColorLinks;
 }
 
 /* Navbar */
 
 .my-navbar a {
-    font-family: "Oswald", sans-serif;
+    font-family: @fontFamilyHeadings;
     text-decoration: none;
     text-transform: @textTransform;
 }
@@ -89,14 +94,14 @@ h6 {
 }
 
 .region-breadcrumb a {
-    font-family: "Oswald", sans-serif;
+    font-family: @fontFamilyHeadings;
     text-decoration: none;
     text-transform: @textTransform;
 }
 
 /* Sidebar */
 .region-sidebar-left ul {
-    font-family: "Oswald", sans-serif;
+    font-family: @fontFamilyHeadings;
     list-style-type: none;
     padding-left: 0;
 }
@@ -113,15 +118,20 @@ h6 {
 /* Next / Previous buttons */
 
 .previous a {
-    font-family: "Oswald", sans-serif;
+    font-family: @fontFamilyHeadings;
     text-transform: @textTransform;
     text-decoration: none;
 }
 
 .next a {
-    font-family: "Oswald", sans-serif;
+    font-family: @fontFamilyHeadings;
     text-transform: @textTransform;
     text-decoration: none;
+}
+
+/* Figure */
+.figure {
+    margin-left: 0;
 }
 
 /* Footer */
@@ -130,16 +140,30 @@ h6 {
     margin-top: 3.5rem;
 }
 
+.footer-column h4 {
+    color: @fontColorFooter;
+}
+
+.footer-column a {
+    color: @fontColorFooter;
+}
+
 .region-footer h4 {
     font-weight: bold;
 }
 
 .outer-wrap-footer {
+    border-top: @footerBorderTop;
     background-color: @bgColorFooter;
-    color: white;
+    background: @backgroundImage;
     min-height: 20rem;
+}
+
+.site-footer {
+    border-bottom: @siteFooterBorderBottom;
 }
 
 .site-footer p {
     margin-top: 0;
+    color: @fontColorFooter;
 }

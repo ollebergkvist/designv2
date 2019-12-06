@@ -5009,594 +5009,306 @@ a.rm-button.rm-clicked .rm-button-face-2 {
      * Enable all default typographic elements.
      */
 }
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+body {
+  font: 16px / 1.5 "Overpass Mono", monospace;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald ", sans-serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img {
+  margin: 0;
+}
+h1 {
+  font-size: 2.375em;
+  line-height: 1.26315789;
+  font-weight: normal;
+  border-bottom: 0 solid #666;
+  margin-bottom: 24px;
+}
+h1 ~ h1,
+h1 ~ h2,
+h1 ~ h3,
+h1 ~ h4,
+h1 ~ h5,
+h1 ~ h6 {
+  margin-top: 48px;
+}
+h1 + h2 {
+  margin-top: 24px;
+}
+h2 {
+  font-size: 1.875em;
+  line-height: 1.6;
+  font-weight: normal;
+  margin-bottom: 24px;
+  border-bottom: 0 solid #ccc;
+}
+h2 + h3 {
+  margin-top: 24px;
+}
+h3 {
+  font-size: 1.75em;
+  line-height: 1.71428571;
+  font-weight: normal;
+  margin-bottom: 24px;
+  border-bottom: 0 solid #eee;
+}
+h3 + h4 {
+  margin-top: 24px;
+}
+h4 {
+  font-size: 1.5em;
+  line-height: 1;
+  font-weight: normal;
+  margin-bottom: 24px;
+  border-bottom: 0 solid #eee;
+}
+h4 + h5 {
+  margin-top: 24px;
+}
+h5 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  border-bottom: 0 solid #eee;
+}
+h5 + h6 {
+  margin-top: 24px;
+}
+h6 {
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  border-bottom: 0 solid #eee;
+}
+p {
+  margin-bottom: 24px;
+}
+small,
+.small,
+.smaller {
+  font-size: 0.875em;
+}
+strong,
+b {
+  font-weight: bold;
+}
+mark {
+  color: #000;
+  background-color: #ff9;
+}
+abbr[title],
+dfn[title] {
+  text-decoration: dotted underline;
+}
+em,
+i,
+dfn {
+  font-style: italic;
+}
+sub,
+sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+blockquote {
+  border-left: 4px solid #eee;
+  padding-left: 1em;
+  margin-left: 0;
+  margin-bottom: 24px;
+}
+pre,
+code,
+kbd,
+samp,
+.code {
+  font-family: "Overpass Mono", monospace;
+}
+code,
+samp {
+  border: 1px solid #ccc;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+code {
+  background-color: #eee;
+}
+pre,
+div.code,
+pre code {
+  font-size: 1em;
+  line-height: 1.5;
+  white-space: pre;
+}
+pre {
+  margin-bottom: 24px;
+}
+pre code {
+  display: block;
+  overflow: auto;
+}
+div.code,
+pre code {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 23px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 0.5em;
+  background-color: #eee;
+}
+ul,
+ol {
+  margin-bottom: 24px;
+  padding-left: 1.5em;
+}
+ul p,
+ol p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin: 0;
+}
+ul {
+  list-style-type: disc;
+}
+ol {
+  list-style-type: decimal;
+}
+dl {
+  margin-bottom: 24px;
+}
+dl.horizontal dt {
+  clear: left;
+  float: left;
+  width: 7em;
+}
+dl.horizontal dd {
+  margin-left: 8em;
+  display: block;
+}
+dd {
+  margin-left: 1.5em;
+}
+article table,
+.table,
+.table1,
+.table2 {
+  margin-bottom: 24px;
+}
+table.full-width,
+article .table,
+.table,
+.table2 {
+  width: 100%;
+}
+article table,
+.table,
+.table2 {
+  border-collapse: collapse;
+  /*
+            tfoot {
+            }
+            */
+}
+article table caption,
+.table caption,
+.table2 caption {
+  font-size: 0.875em;
+  line-height: 1.71428571;
+  text-align: left;
+  font-style: italic;
+}
+article table thead,
+.table thead,
+.table2 thead {
+  box-shadow: 0 1px 0 #aaa;
+}
+article table th,
+.table th,
+.table2 th {
+  vertical-align: bottom;
+  font-weight: bold;
+  text-align: left;
+}
+article table th,
+.table th,
+.table2 th,
+article table td,
+.table td,
+.table2 td {
+  padding: 6px;
+}
+article table tr,
+.table tr,
+.table2 tr {
+  box-shadow: 0 1px 0 #ccc;
+}
+article table tr:hover,
+.table tr:hover,
+.table2 tr:hover {
+  color: #000;
+  background-color: #f6f6f6;
+  box-shadow: 0 1px 0 #666;
+}
+table.striped tbody tr:nth-child(even) td,
+table.striped tbody tr.even td {
+  background-color: #fafafa;
+}
+hr {
+  position: relative;
+  top: -2px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 35px;
+  margin-bottom: 36px;
+}
+hr::after {
+  content: "§";
+  position: relative;
+  top: -0.7em;
+  left: 50%;
+  padding: 0 0.25em;
+  background-color: #fff;
+}
 .hgrid .inner-wrap {
   background-image: url("../img/magic-number-24px.png");
-}
-body {
-  font: 16px/1.5 "sans-serif";
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "serif";
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-h1 img,
-h2 img,
-h3 img,
-h4 img,
-h5 img,
-h6 img {
-  margin: 0;
-}
-h1 {
-  font-size: 2.375em;
-  line-height: 1.26315789;
-  font-weight: normal;
-  border-bottom: 1px solid #666;
-  margin-bottom: 23px;
-}
-h1 ~ h1,
-h1 ~ h2,
-h1 ~ h3,
-h1 ~ h4,
-h1 ~ h5,
-h1 ~ h6 {
-  margin-top: 48px;
-}
-h1 + h2 {
-  margin-top: 24px;
-}
-h2 {
-  font-size: 1.875em;
-  line-height: 1.6;
-  font-weight: normal;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #CCC;
-}
-h2 + h3 {
-  margin-top: 24px;
-}
-h3 {
-  font-size: 1.75em;
-  line-height: 1.71428571;
-  font-weight: normal;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
-}
-h3 + h4 {
-  margin-top: 24px;
-}
-h4 {
-  font-size: 1.5em;
-  line-height: 1;
-  font-weight: normal;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
-}
-h4 + h5 {
-  margin-top: 24px;
-}
-h5 {
-  font-size: 1.25em;
-  line-height: 1.2;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
-}
-h5 + h6 {
-  margin-top: 24px;
-}
-h6 {
-  font-size: 1.25em;
-  line-height: 1.2;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
-}
-p {
-  margin-bottom: 24px;
-}
-small,
-.small,
-.smaller {
-  font-size: 0.875em;
-}
-strong,
-b {
-  font-weight: bold;
-}
-mark {
-  color: #000;
-  background-color: #ff9;
-}
-abbr[title],
-dfn[title] {
-  text-decoration: dotted underline;
-}
-em,
-i,
-dfn {
-  font-style: italic;
-}
-sub,
-sup {
-  font-size: 0.75em;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-blockquote {
-  border-left: 4px solid #eee;
-  padding-left: 1em;
-  margin-left: 0;
-  margin-bottom: 24px;
-}
-pre,
-code,
-kbd,
-samp,
-.code {
-  font-family: "monospace";
-}
-code,
-samp {
-  border: 1px solid #ccc;
-  padding-left: 1px;
-  padding-right: 1px;
-}
-code {
-  background-color: #eee;
-}
-pre,
-div.code,
-pre code {
-  font-size: 1em;
-  line-height: 1.5;
-  white-space: pre;
-}
-pre {
-  margin-bottom: 24px;
-}
-pre code {
-  display: block;
-  overflow: auto;
-}
-div.code,
-pre code {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 23px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 0.5em;
-  background-color: #eee;
-}
-ul,
-ol {
-  margin-bottom: 24px;
-  padding-left: 1.5em;
-}
-ul p,
-ol p {
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-ul ul,
-ol ul,
-ul ol,
-ol ol {
-  margin: 0;
-}
-ul {
-  list-style-type: disc;
-}
-ol {
-  list-style-type: decimal;
-}
-dl {
-  margin-bottom: 24px;
-}
-dl.horizontal dt {
-  clear: left;
-  float: left;
-  width: 7em;
-}
-dl.horizontal dd {
-  margin-left: 8em;
-  display: block;
-}
-dd {
-  margin-left: 1.5em;
-}
-article table,
-.table,
-.table1,
-.table2 {
-  margin-bottom: 24px;
-}
-table.full-width,
-article .table,
-.table,
-.table2 {
-  width: 100%;
-}
-article table,
-.table,
-.table2 {
-  border-collapse: collapse;
-  /*
-            tfoot {
-            }
-            */
-}
-article table caption,
-.table caption,
-.table2 caption {
-  font-size: 0.875em;
-  line-height: 1.71428571;
-  text-align: left;
-  font-style: italic;
-}
-article table thead,
-.table thead,
-.table2 thead {
-  box-shadow: 0 1px 0 #aaa;
-}
-article table th,
-.table th,
-.table2 th {
-  vertical-align: bottom;
-  font-weight: bold;
-  text-align: left;
-}
-article table th,
-.table th,
-.table2 th,
-article table td,
-.table td,
-.table2 td {
-  padding: 6px;
-}
-article table tr,
-.table tr,
-.table2 tr {
-  box-shadow: 0 1px 0 #ccc;
-}
-article table tr:hover,
-.table tr:hover,
-.table2 tr:hover {
-  color: #000;
-  background-color: #f6f6f6;
-  box-shadow: 0 1px 0 #666;
-}
-table.striped tbody tr:nth-child(even) td,
-table.striped tbody tr.even td {
-  background-color: #fafafa;
-}
-hr {
-  position: relative;
-  top: -2px;
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  margin-top: 35px;
-  margin-bottom: 36px;
-}
-hr::after {
-  content: "§";
-  position: relative;
-  top: -0.7em;
-  left: 50%;
-  padding: 0 0.25em;
-  background-color: #fff;
-}
-/**
- * Base style to affect HTML elements on a general scale.
- */
-/**
- * Base style to affect HTML elements on a general scale.
- */
-body {
-  font: 16px/1.5 "sans-serif";
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "serif";
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-h1 img,
-h2 img,
-h3 img,
-h4 img,
-h5 img,
-h6 img {
-  margin: 0;
-}
-h1 {
-  font-size: 2.375em;
-  line-height: 1.26315789;
-  font-weight: normal;
-  border-bottom: 1px solid #666;
-  margin-bottom: 23px;
-}
-h1 ~ h1,
-h1 ~ h2,
-h1 ~ h3,
-h1 ~ h4,
-h1 ~ h5,
-h1 ~ h6 {
-  margin-top: 48px;
-}
-h1 + h2 {
-  margin-top: 24px;
-}
-h2 {
-  font-size: 1.875em;
-  line-height: 1.6;
-  font-weight: normal;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #CCC;
-}
-h2 + h3 {
-  margin-top: 24px;
-}
-h3 {
-  font-size: 1.75em;
-  line-height: 1.71428571;
-  font-weight: normal;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
-}
-h3 + h4 {
-  margin-top: 24px;
-}
-h4 {
-  font-size: 1.5em;
-  line-height: 1;
-  font-weight: normal;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
-}
-h4 + h5 {
-  margin-top: 24px;
-}
-h5 {
-  font-size: 1.25em;
-  line-height: 1.2;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
-}
-h5 + h6 {
-  margin-top: 24px;
-}
-h6 {
-  font-size: 1.25em;
-  line-height: 1.2;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
-}
-p {
-  margin-bottom: 24px;
-}
-small,
-.small,
-.smaller {
-  font-size: 0.875em;
-}
-strong,
-b {
-  font-weight: bold;
-}
-mark {
-  color: #000;
-  background-color: #ff9;
-}
-abbr[title],
-dfn[title] {
-  text-decoration: dotted underline;
-}
-em,
-i,
-dfn {
-  font-style: italic;
-}
-sub,
-sup {
-  font-size: 0.75em;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-blockquote {
-  border-left: 4px solid #eee;
-  padding-left: 1em;
-  margin-left: 0;
-  margin-bottom: 24px;
-}
-pre,
-code,
-kbd,
-samp,
-.code {
-  font-family: "monospace";
-}
-code,
-samp {
-  border: 1px solid #ccc;
-  padding-left: 1px;
-  padding-right: 1px;
-}
-code {
-  background-color: #eee;
-}
-pre,
-div.code,
-pre code {
-  font-size: 1em;
-  line-height: 1.5;
-  white-space: pre;
-}
-pre {
-  margin-bottom: 24px;
-}
-pre code {
-  display: block;
-  overflow: auto;
-}
-div.code,
-pre code {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 23px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 0.5em;
-  background-color: #eee;
-}
-ul,
-ol {
-  margin-bottom: 24px;
-  padding-left: 1.5em;
-}
-ul p,
-ol p {
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-ul ul,
-ol ul,
-ul ol,
-ol ol {
-  margin: 0;
-}
-ul {
-  list-style-type: disc;
-}
-ol {
-  list-style-type: decimal;
-}
-dl {
-  margin-bottom: 24px;
-}
-dl.horizontal dt {
-  clear: left;
-  float: left;
-  width: 7em;
-}
-dl.horizontal dd {
-  margin-left: 8em;
-  display: block;
-}
-dd {
-  margin-left: 1.5em;
-}
-article table,
-.table,
-.table1,
-.table2 {
-  margin-bottom: 24px;
-}
-table.full-width,
-article .table,
-.table,
-.table2 {
-  width: 100%;
-}
-article table,
-.table,
-.table2 {
-  border-collapse: collapse;
-  /*
-            tfoot {
-            }
-            */
-}
-article table caption,
-.table caption,
-.table2 caption {
-  font-size: 0.875em;
-  line-height: 1.71428571;
-  text-align: left;
-  font-style: italic;
-}
-article table thead,
-.table thead,
-.table2 thead {
-  box-shadow: 0 1px 0 #aaa;
-}
-article table th,
-.table th,
-.table2 th {
-  vertical-align: bottom;
-  font-weight: bold;
-  text-align: left;
-}
-article table th,
-.table th,
-.table2 th,
-article table td,
-.table td,
-.table2 td {
-  padding: 6px;
-}
-article table tr,
-.table tr,
-.table2 tr {
-  box-shadow: 0 1px 0 #ccc;
-}
-article table tr:hover,
-.table tr:hover,
-.table2 tr:hover {
-  color: #000;
-  background-color: #f6f6f6;
-  box-shadow: 0 1px 0 #666;
-}
-table.striped tbody tr:nth-child(even) td,
-table.striped tbody tr.even td {
-  background-color: #fafafa;
-}
-hr {
-  position: relative;
-  top: -2px;
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  margin-top: 35px;
-  margin-bottom: 36px;
-}
-hr::after {
-  content: "§";
-  position: relative;
-  top: -0.7em;
-  left: 50%;
-  padding: 0 0.25em;
-  background-color: #fff;
 }
 /* Fonts */
 p,
 span,
 div {
-  font-family: "Overpass Mono", monospace;
   color: #333;
 }
 a,
@@ -5606,7 +5318,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Oswald", sans-serif;
   color: #333;
 }
 h1,
@@ -5616,44 +5327,44 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
-  border-bottom: none;
 }
 /* Container */
+.inner-wrap-main {
+  margin-top: 3rem;
+}
 .wrap-all {
   background-color: white;
 }
 /* Header */
 .site-logo-text a {
   font-size: 2em;
+  font-family: "Oswald", sans-serif;
   letter-spacing: 0.12em;
   font-weight: 100;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
 }
 /* Navbar */
 .my-navbar a {
+  font-family: "Oswald", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
 }
 /* Bread crumbs */
 .region-breadcrumb ul {
   list-style-type: none;
-  margin-left: 0;
   padding-left: 0;
 }
 .region-breadcrumb a {
+  font-family: "Oswald", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
 }
 /* Sidebar */
 .region-sidebar-left ul {
+  font-family: "Oswald", sans-serif;
   list-style-type: none;
-  margin-left: 0;
   padding-left: 0;
-}
-.wrap-sidebar h4 {
-  font-weight: 800;
 }
 .wrap-sidebar a {
   text-decoration: none;
@@ -5661,14 +5372,19 @@ h6 {
 }
 /* Next / Previous buttons */
 .previous a {
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
 }
 .next a {
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
 }
 /* Footer */
+.footer-column {
+  margin-top: 3.5rem;
+}
 .region-footer h4 {
   font-weight: bold;
 }
@@ -5676,6 +5392,9 @@ h6 {
   background-color: #d7cbbd;
   color: white;
   min-height: 20rem;
+}
+.site-footer p {
+  margin-top: 0;
 }
 /**
  * Import the vertical grid.
@@ -5716,6 +5435,9 @@ h6 {
  * Variables
  */
 /* General */
+.inner-wrap-header .row {
+  max-width: 100%;
+}
 .row {
   display: block;
   width: 101.04166667%;
@@ -5845,7 +5567,7 @@ h6 {
   margin-right: 0.52083333%;
 }
 .region-main {
-  min-height: 38rem;
+  min-height: 52rem;
 }
 /* Footer */
 .site-footer {
@@ -5960,4 +5682,7 @@ h6 {
 }
 /**
  * My own settings, not currently in their own module.
+ */
+/**
+ * Typographic defaults.
  */

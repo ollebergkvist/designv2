@@ -1,5 +1,5 @@
 /*!
- * LESS version of the stylesheet for design kmom03_v2.
+ * LESS version of the stylesheet for design kmom04_minimalistic.
  *
  * This stylesheet is for the design course and kmom03. Its intention is to
  * use kmom01.css and lessify the style and use this as a wrapper for the new
@@ -27,12 +27,6 @@
 @import "@fortawesome/fontawesome-free/less/solid.less";
 @import "@fortawesome/fontawesome-free/less/brands.less";
 
-// Default grid, change to fit your requirements.
-// @columnWidth: 30;
-// @gutterWidth: 10;
-// @columns: 24;
-@gridType: "flex"; // "flex"
-
 /**
  * Internal self contained modules, save in directory module/.
  */
@@ -54,7 +48,7 @@
 /**
  * Base style to affect HTML elements on a general scale.
  */
-@import "base/base_kmom03_v2.less";
+@import "base/base_kmom04.less";
 
 /**
  * Import the vertical grid.
@@ -62,28 +56,17 @@
 @import "@desinax/vertical-grid/less/grid.less";
 @import "layout/vgrid.less";
 
+// Default grid, change to fit your requirements.
+// @columnWidth: 30;
+// @gutterWidth: 10;
+// @columns: 24;
+// @gridType: "flex"; // "flex"
+
 /**
  * Layout style for general structure of header, navbar, main, footer
  * and other regions of the page including route specific styles.
  */
-// @import "layout/layout.less";
-// @import "layout/layout_kmom03_v2.less";
 @import "layout/regions.less"; // To add style for ?regions
 
-/**
- * My own settings, not currently in their own module.
- */
-// @bgColorMain: white;
-// @bgColorFooter: #ffefd5;
-
-/**
- * Typographic defaults.
- */
-// Magic number and base fontsize
-@magicNumber: 24px; // 22px
-@fontSizeBody: 16px;
-
-// Default font-families
-@fontFamilyHeadings: "Oswald ", sans-serif;
-@fontFamilyBody: "Overpass Mono", monospace;
-@fontFamilyCode: "Overpass Mono", monospace;
+/* Import module */
+@import "module/minimalistic.less";

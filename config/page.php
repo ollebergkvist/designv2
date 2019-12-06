@@ -20,7 +20,7 @@ return [
             "lang" => "sv",
             "stylesheets" => [
                 // Change here to set another default stylesheet
-                "css/kmom03_v2.min.css",
+                "css/kmom04_minimalistic.min.css",
             ],
             "javascripts" => [
                 "js/responsive-menu.js",

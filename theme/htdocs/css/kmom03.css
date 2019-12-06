@@ -4765,6 +4765,9 @@ template {
  * Variables
  */
 /* General */
+.inner-wrap-header .row {
+  max-width: 100%;
+}
 .row {
   display: block;
   width: 101.04166667%;
@@ -4894,7 +4897,7 @@ template {
   margin-right: 0.52083333%;
 }
 .region-main {
-  min-height: 38rem;
+  min-height: 52rem;
 }
 /* Footer */
 .site-footer {
