@@ -1,5 +1,5 @@
 /*!
- * LESS version of the stylesheet for design kmom03_v2.
+ * LESS version of the stylesheet for design kmom04_minimalistic.
  *
  * This stylesheet is for the design course and kmom03. Its intention is to
  * use kmom01.css and lessify the style and use this as a wrapper for the new
@@ -5010,13 +5010,25 @@ a.rm-button.rm-clicked .rm-button-face-2 {
      */
 }
 /**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+/**
+ * Figure with ASCIINEMA
+ */
+/**
+ * Figure with Codepen
+ */
+/** --------------------------------------------------------------
+ * Figure through .figure
+ */
+/**
  * Base style to affect HTML elements on a general scale.
  */
 /**
  * Base style to affect HTML elements on a general scale.
  */
 body {
-  font: 16px / 1.5 "Overpass Mono", monospace;
+  font: 16px / 1.5 "Titillium Web", sans-serif;
 }
 h1,
 h2,
@@ -5024,7 +5036,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Oswald ", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -5148,7 +5160,7 @@ code,
 kbd,
 samp,
 .code {
-  font-family: "Overpass Mono", monospace;
+  font-family: "Titillium Web", sans-serif;
 }
 code,
 samp {
@@ -5305,6 +5317,129 @@ hr::after {
 .hgrid .inner-wrap {
   background-image: url("../img/magic-number-24px.png");
 }
+figure.figure,
+figure.asciinema,
+figure.codepen,
+figure.figure-codepen {
+  display: table;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  /* Chrome shinks images in td */
+  /* Position the images */
+}
+figure.figure img {
+  max-width: 100%;
+  display: block;
+}
+figure.figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 12px;
+}
+figure.figure figcaption p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
+}
+figure.figure td img {
+  max-width: none;
+}
+figure.figure.center {
+  clear: both;
+  margin: auto;
+}
+figure.figure.center figcaption {
+  text-align: center;
+}
+figure.figure.left {
+  float: left;
+  margin-right: 0.5em;
+}
+figure.figure.right {
+  float: right;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 963px) {
+  figure.figure.left.w67,
+  figure.figure.right.w67 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w67 img,
+  figure.figure.right.w67 img {
+    width: 962.5px;
+  }
+}
+@media screen and (max-width: 733px) {
+  figure.figure.left.w50,
+  figure.figure.right.w50 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w50 img,
+  figure.figure.right.w50 img {
+    width: 733.33333333px;
+  }
+}
+@media screen and (max-width: 688px) {
+  figure.figure.left.w40,
+  figure.figure.right.w40 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w40 img,
+  figure.figure.right.w40 img {
+    width: 687.5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  figure.figure.left.w33,
+  figure.figure.right.w33 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w33 img,
+  figure.figure.right.w33 img {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 367px) {
+  figure.figure.left.w25,
+  figure.figure.right.w25 {
+    margin-left: 0;
+    margin-right: 0;
+    float: none;
+  }
+  figure.figure.left.w25 img,
+  figure.figure.right.w25 img {
+    width: 366.66666667px;
+  }
+}
+figure.asciinema {
+  display: block;
+}
+figure.asciinema figcaption {
+  display: block;
+}
+figure.asciinema .asciicast {
+  margin: 0 !important;
+}
+figure.codepen,
+figure.figure-codepen {
+  width: 100%;
+}
+/* Responsive images */
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
 /* Fonts */
 p,
 span,
@@ -5315,9 +5450,11 @@ a,
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
+  color: #333;
+}
+h4 {
   color: #333;
 }
 h1,
@@ -5328,25 +5465,40 @@ h5,
 h6 {
   text-transform: uppercase;
 }
+hr {
+  margin-top: 4rem;
+}
 /* Container */
 .inner-wrap-main {
   margin-top: 3rem;
 }
 .wrap-all {
-  background-color: white;
+  background-color: #f8f8f8;
 }
 /* Header */
+.outer-wrap-header {
+  background-color: #ffffff;
+  background: "";
+}
+.rm-desktop li a {
+  color: #787878;
+}
 .site-logo-text a {
   font-size: 2em;
-  font-family: "Oswald", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   letter-spacing: 0.12em;
   font-weight: 100;
   text-transform: uppercase;
   text-decoration: none;
+  margin-left: 1rem;
+  color: #787878;
+}
+.site-logo-text {
+  height: 100%;
 }
 /* Navbar */
 .my-navbar a {
-  font-family: "Oswald", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -5356,13 +5508,13 @@ h6 {
   padding-left: 0;
 }
 .region-breadcrumb a {
-  font-family: "Oswald", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
 }
 /* Sidebar */
 .region-sidebar-left ul {
-  font-family: "Oswald", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   list-style-type: none;
   padding-left: 0;
 }
@@ -5372,29 +5524,47 @@ h6 {
 }
 /* Next / Previous buttons */
 .previous a {
-  font-family: "Oswald", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
 }
 .next a {
-  font-family: "Oswald", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
+}
+/* Figure */
+.figure {
+  margin-left: 0;
+}
+figure.figure figcaption p {
+  font-style: normal;
 }
 /* Footer */
 .footer-column {
   margin-top: 3.5rem;
 }
+.footer-column h4 {
+  color: #c8c8c8;
+}
+.footer-column a {
+  color: #c8c8c8;
+}
 .region-footer h4 {
   font-weight: bold;
 }
 .outer-wrap-footer {
-  background-color: #d7cbbd;
-  color: white;
+  border-top: none;
+  background-color: #424240;
+  background: "";
   min-height: 20rem;
+}
+.site-footer {
+  border-bottom: 1px solid #fff;
 }
 .site-footer p {
   margin-top: 0;
+  color: #c8c8c8;
 }
 /**
  * Import the vertical grid.
@@ -5676,9 +5846,42 @@ h6 {
   border: 1px solid #6cbac4;
   color: #111;
 }
+/* Import module */
 /**
- * My own settings, not currently in their own module.
+ * Sample of some self contained module. Start by defining the variables that
+ * the user can override and the defined the style.
  */
 /**
- * Typographic defaults.
+ * Variables
  */
+/*  Colors */
+/* Typography */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Titillium Web SemiBold Italic'), local('TitilliumWeb-SemiBoldItalic'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPFcZTIAOhVxoMyOr9n_E7fdMbe0IhDYZyZ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPecZTIAOhVxoMyOr9n_E7fdMPmCA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Titillium Web SemiBold'), local('TitilliumWeb-SemiBold'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPDcZTIAOhVxoMyOr9n_E7ffBzCGItzZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Titillium Web Bold'), local('TitilliumWeb-Bold'), url(https://fonts.gstatic.com/s/titilliumweb/v8/NaPDcZTIAOhVxoMyOr9n_E7ffHjDGItzZg.ttf) format('truetype');
+}
+/* Borders */

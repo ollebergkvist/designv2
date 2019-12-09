@@ -16,6 +16,30 @@ body {
     #desinax-hgrid.showGrid(@gridImage);
 }
 
+// Activates Figure and enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+/* Responsive images */
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
 /* Fonts */
 
 p,
@@ -44,6 +68,10 @@ h4,
 h5,
 h6 {
     text-transform: @textTransform;
+}
+
+hr {
+    margin-top: 4rem;
 }
 
 /* Container */
@@ -136,6 +164,10 @@ h6 {
 /* Figure */
 .figure {
     margin-left: 0;
+}
+
+figure.figure figcaption p {
+    font-style: normal;
 }
 
 /* Footer */

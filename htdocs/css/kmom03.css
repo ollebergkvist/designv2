@@ -4822,10 +4822,6 @@ template {
 .region-flash {
   display: none;
 }
-/* Images */
-.img {
-  max-width: 100%;
-}
 /* Header */
 .region-header-col-1,
 .region-header-col-3 {

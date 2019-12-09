@@ -5355,6 +5355,9 @@ h6 {
   margin-left: 1rem;
   color: white;
 }
+.site-logo-text {
+  height: 100%;
+}
 /* Navbar */
 .my-navbar a {
   font-family: "Nunito", sans-serif;
@@ -5517,10 +5520,6 @@ h6 {
 }
 .region-flash {
   display: none;
-}
-/* Images */
-.img {
-  max-width: 100%;
 }
 /* Header */
 .region-header-col-1,
