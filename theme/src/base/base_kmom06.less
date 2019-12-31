@@ -1,0 +1,207 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+// Activate the grid base font
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+// Activates Figure and enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+/* Responsive images */
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
+/* Fonts */
+
+p,
+span,
+div {
+    color: @fontColor;
+}
+
+a,
+h1,
+h2,
+h3,
+h5,
+h6 {
+    color: @fontColor;
+}
+
+h4 {
+    color: @accentFontColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: @textTransform;
+}
+
+hr {
+    margin-top: 4rem;
+}
+
+/* Container */
+
+.inner-wrap-main {
+    margin-top: 3rem;
+}
+
+.wrap-all {
+    background-color: @bgColorMain;
+}
+
+/* Header */
+
+.outer-wrap-header {
+    background-color: @bgColorHeader;
+    background: @backgroundImage;
+}
+
+.rm-desktop li a {
+    color: @fontColorLinks;
+}
+
+.site-logo-text a {
+    font-size: 2em;
+    font-family: @fontFamilyHeadings;
+    letter-spacing: 0.12em;
+    font-weight: 100;
+    text-transform: @textTransform;
+    text-decoration: none;
+    margin-left: 1rem;
+    color: @accentBgColor;
+}
+
+.site-logo-text {
+    height: 100%;
+}
+
+/* Navbar */
+
+.my-navbar a {
+    font-size: 1em;
+    font-family: @fontFamilyLinks;
+    text-decoration: none;
+    text-transform: @textTransform;
+}
+
+/* Bread crumbs */
+
+.region-breadcrumb ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.region-breadcrumb a {
+    font-family: @fontFamilyHeadings;
+    text-decoration: none;
+    text-transform: @textTransform;
+}
+
+/* Sidebar */
+.region-sidebar-left ul {
+    font-family: @fontFamilyHeadings;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.wrap-sidebar a {
+    text-decoration: none;
+    text-transform: @textTransform;
+}
+
+/* Next / Previous buttons */
+
+.previous a {
+    font-family: @fontFamilyHeadings;
+    text-transform: @textTransform;
+    text-decoration: none;
+}
+
+.next a {
+    font-family: @fontFamilyHeadings;
+    text-transform: @textTransform;
+    text-decoration: none;
+}
+
+/* Figure */
+.figure {
+    margin-left: 0;
+}
+
+figure.figure figcaption p {
+    font-style: normal;
+}
+
+/* Footer */
+
+.footer-column {
+    margin-top: 3.5rem;
+}
+
+.footer-column h4 {
+    color: @accentBgColor;
+}
+
+.footer-column a {
+    color: @fontColorFooter;
+}
+
+.region-footer h4 {
+    font-weight: bold;
+}
+
+.outer-wrap-footer {
+    border-top: @footerBorderTop;
+    background-color: @bgColorFooter;
+    background: @backgroundImage;
+    min-height: 20rem;
+}
+
+.site-footer {
+    border-bottom: @siteFooterBorderBottom;
+}
+
+.site-footer p {
+    margin-top: 0;
+    color: @fontColorFooter;
+}
+
+.byline {
+    border-top: 1px solid black;
+    margin-top: 6rem;
+}

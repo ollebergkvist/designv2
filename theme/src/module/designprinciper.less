@@ -1,0 +1,92 @@
+/**
+ * Sample of some self contained module. Start by defining the variables that
+ * the user can override and the defined the style.
+ */
+
+/**
+ * Variables
+ */
+
+/*  Colors */
+@bgColorMain: white;
+@bgColorHeader: none;
+@bgColorFooter: white;
+@fontColor: #413e3e;
+@fontColorLinks: #413e3e;
+@fontColorFooter: #333;
+@accentBgColor: #413e3e;
+// #ff96a7
+@accentFontColor: #413e3e;
+@hrColor: black;
+@tableColor: black;
+@backgroundImage: "";
+
+/* Typography */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600&display=swap");
+@fontFamilyHeadings: "Montserrat", sans-serif;
+@fontFamilyLinks: "Gloria Hallelujah", sans-serif;
+@fontFamilyBody: "Montserrat", sans-serif;
+@fontFamilyCode: "Montserrat", sans-serif;
+@textTransform: capitalize;
+
+/* Borders */
+@footerBorderTop: none;
+@siteFooterBorderBottom: 1px solid #fff;
+
+/* Background image */
+.inner-wrap-header {
+    background-image: url(../img/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 35em;
+}
+
+/* Background image */
+.outer-wrap-footer {
+    background-image: url(../img/footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 15em;
+}
+
+/* Footer */
+.site-footer {
+    border-bottom: 0;
+}
+
+.site-logo-text a {
+    color: #ef8697;
+}
+
+.footer-column {
+    margin-top: 0;
+}
+
+/* Hamburger menu */
+.rm-max .rm-small .rm-button {
+    color: #413e3e;
+}
+
+/* H1 */
+h1 {
+    color: #413e3e;
+}
+
+.site-logo-text a {
+    font-family: @fontFamilyLinks;
+}
+
+.my-navbar a {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Breadcrumb links */
+.region-breadcrumb a {
+    color: #ef8697;
+}
